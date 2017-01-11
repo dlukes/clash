@@ -20,15 +20,19 @@ maybe that's not needed? And maybe it can be done as a "skin" extension?
 The basis: a robust Python API for accessing different corpus resources --
 perhaps as an extension of NLTK, to leverage its already available capabilities
 for working with plaintext corpora? At any rate, a module has to be added to
-interact with manatee-indexed corpora. Each action corresponds to a function
-call.
+interact with manatee-indexed corpora, which should probably use a different API
+than [CorpusReader][CorpusReader], because it doesn't really make sense to
+require a list of `fileids` to initialize an object representing an indexed
+corpus accessible via a server. Maybe `IndexedCorpus`, `CorpusConnection`,
+`CorpusDb`?
 
-Each user will spawn a python kernel in the background, which will run their
-actions. By default, there will be predefined actions accessible via a GUI which
-will cover some typical use cases and workflows, but at any point, the user will
-be allowed to "shell out" into a Jupyter notebook, where all previous actions
-will be available as results of individual cells (`Out[xyz]`) for custom
-manipulation and code execution leveraging the full power of Python.
+Each action within the GUI corresponds to a function call. Each user will spawn
+a python kernel in the background, which will run their actions. By default,
+there will be predefined actions accessible via the GUI which will cover some
+typical use cases and workflows, but at any point, the user will be allowed to
+"shell out" into a Jupyter notebook, where all previous actions will be
+available as results of individual cells (`Out[xyz]`) for custom manipulation
+and code execution leveraging the full power of Python.
 
 ## Challenges
 
@@ -79,3 +83,4 @@ Extending the JupyterLab notebook plugin: <https://jupyterlab-tutorial.readthedo
 Rust microframework: <https://github.com/fengsp/pencil>
 
 [lab]: https://github.com/jupyterlab/jupyterlab
+[CorpusReader]: https://github.com/nltk/nltk/blob/develop/nltk/corpus/reader/api.py
