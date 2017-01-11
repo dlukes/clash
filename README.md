@@ -66,6 +66,16 @@ What would be really neat though is if the GUI functions were implemented in
 such a way that users could easily add their custom routines into the GUI, along
 with an auto-generated query form etc., just by editing their `.clashrc`.
 
+### Coping with large results
+
+The obvious (and correct) solution: generators. The problem: generators get
+consumed, so that when you page through a concordance in the GUI and then access
+it on the CLI, you'll continue in the middle of it. Bug or feature?
+
+Perhaps the objects returned by the API should cache the values already yielded
+for repeated access? Or maybe just warn the user that they should reinit the
+object when they access it from the shell?
+
 ## Scratchpad
 
 Flask at scale (Miguel Grinberg): <https://youtu.be/tdIIJuPh3SI?t=1h25m8s>
