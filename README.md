@@ -47,6 +47,14 @@ end their kernel sessions?
 Also, for advanced users, it should be possible to spawn new kernels for
 separate projects.
 
+### User extensions
+
+Users will by definition be able to extend the corpus manager by writing their
+own Python code which they can load into the python kernel to perform analyses.
+What would be really neat though is if the GUI functions were implemented in
+such a way that users could easily add their custom routines into the GUI, along
+with an auto-generated query form etc., just by editing their `.clashrc`.
+
 ## Scratchpad
 
 Flask at scale (Miguel Grinberg): <https://youtu.be/tdIIJuPh3SI?t=1h25m8s>
