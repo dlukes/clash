@@ -34,6 +34,13 @@ typical use cases and workflows, but at any point, the user will be allowed to
 available as results of individual cells (`Out[xyz]`) for custom manipulation
 and code execution leveraging the full power of Python.
 
+### Features
+
+- a CLI version of the shell? basically, just a `clash` command which would
+  launch `ipython` and import the necessary libraries; then the only other thing
+  that's needed is to ensure that all functions used in the GUI also behave
+  reasonably (i.e. generate useful output) when used on the command line
+
 ## Challenges
 
 ### Data persistence
