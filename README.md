@@ -10,10 +10,18 @@ operations or custom code").
 
 ## Architecture
 
-A robust Python API for accessing different corpus resources -- perhaps as an
-extension of NLTK, to leverage its already available capabilities for working
-with plaintext corpora? At any rate, a module has to be added to interact with
-manatee-indexed corpora. Each action corresponds to a function call.
+Built from scratch or on top of [JupyterLab][lab]? The latter is probably
+easier. Built as an extension to JupyterLab or as a fork thereof? That's a
+harder decision to make. An extension makes it easier to get updates to core
+code. Forking would allow us to modify the GUI to be newbie friendly (i.e. no
+file browser, no commands, no tabs, just an intuitive query interface). Though
+maybe that's not needed? And maybe it can be done as a "skin" extension?
+
+The basis: a robust Python API for accessing different corpus resources --
+perhaps as an extension of NLTK, to leverage its already available capabilities
+for working with plaintext corpora? At any rate, a module has to be added to
+interact with manatee-indexed corpora. Each action corresponds to a function
+call.
 
 Each user will spawn a python kernel in the background, which will run their
 actions. By default, there will be predefined actions accessible via a GUI which
@@ -61,3 +69,5 @@ to a youtube tutorial.
 Extending the JupyterLab notebook plugin: <https://jupyterlab-tutorial.readthedocs.io/en/latest/notebook.html#how-to-extend-the-notebook-plugin>
 
 Rust microframework: <https://github.com/fengsp/pencil>
+
+[lab]: https://github.com/jupyterlab/jupyterlab
