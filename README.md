@@ -80,6 +80,10 @@ object when they access it from the shell?
 
 Flask at scale (Miguel Grinberg): <https://youtu.be/tdIIJuPh3SI?t=1h25m8s>
 
+MG likes Backbone for the frontend, but that's kind old-fashioned. An
+established yet increasingly popular (less bloated and less verbose)
+alternative to React and Angular seems to be Vue.
+
 Flask for fun and profit (Armin
 Ronacher): <https://www.youtube.com/watch?v=1ByQhAM5c1I>. See in particular how
 to do API pagination by setting a `Link` header to the URI where the next page
