@@ -103,5 +103,9 @@ Extending the JupyterLab notebook plugin: <https://jupyterlab-tutorial.readthedo
 
 Rust microframework: <https://github.com/fengsp/pencil>
 
+References for inspiration and/or a potential paper on Clash:
+
+- [CWB](https://www.birmingham.ac.uk/documents/college-artslaw/corpus/conference-archives/2011/Paper-153.pdf)
+
 [lab]: https://github.com/jupyterlab/jupyterlab
 [CorpusReader]: https://github.com/nltk/nltk/blob/develop/nltk/corpus/reader/api.py
