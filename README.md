@@ -78,30 +78,10 @@ object when they access it from the shell?
 
 ## Scratchpad
 
-Flask at scale (Miguel Grinberg): <https://youtu.be/tdIIJuPh3SI?t=1h25m8s>
+<https://github.com/jtpio/jupyterlab-extension-examples>, especially the
+kernel-related ones.
 
-MG likes Backbone for the frontend, but that's kind old-fashioned. An
-established yet increasingly popular (less bloated and less verbose)
-alternative to React and Angular seems to be Vue.
-
-Flask for fun and profit (Armin
-Ronacher): <https://www.youtube.com/watch?v=1ByQhAM5c1I>. See in particular how
-to do API pagination by setting a `Link` header to the URI where the next page
-of results can be fetched from.
-
-Also, an interesting idea about separating the basic application server (Flask)
-from the async / websocket / permanent connection server (tornado, Go,
-nodejs...) and connecting both via a Redis broker.
-
-JSON API response validation: `voluptuous`
-
-Building a JupyterLab
-extension: <https://github.com/jupyterlab/extension-builder>, including a link
-to a youtube tutorial.
-
-Extending the JupyterLab notebook plugin: <https://jupyterlab-tutorial.readthedocs.io/en/latest/notebook.html#how-to-extend-the-notebook-plugin>
-
-Rust microframework: <https://github.com/fengsp/pencil>
+<https://jupyterlab.readthedocs.io/en/stable/developer/extension_dev.html>
 
 References for inspiration and/or a potential paper on Clash:
 
