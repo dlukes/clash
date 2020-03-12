@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "clash"
+version = "0.1.0"
+description = "The Corpus Linguistics Advanced Shell"
+authors = ["David Lukes <dafydd.lukes@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyterlab = "^2.0.1"
+
+[tool.poetry.dev-dependencies]
+cookiecutter = "^1.7.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
