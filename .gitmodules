@@ -1,3 +1,0 @@
-[submodule "jupyterlab_clash"]
-	path = jupyterlab_clash
-	url = git@github.com:dlukes/jupyterlab_clash
