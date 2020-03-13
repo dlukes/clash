@@ -83,6 +83,9 @@ kernel-related ones.
 
 <https://jupyterlab.readthedocs.io/en/stable/developer/extension_dev.html>
 
+Re-usable UI elements:
+<https://jupyterlab.readthedocs.io/en/stable/developer/ui_helpers.html>
+
 References for inspiration and/or a potential paper on Clash:
 
 - [CWB](https://www.birmingham.ac.uk/documents/college-artslaw/corpus/conference-archives/2011/Paper-153.pdf)
